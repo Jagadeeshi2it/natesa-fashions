@@ -1,0 +1,484 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Natesa Fashions — Spiritual Mats</title>
+<script src="./vendor/react.js"></script>
+<script src="./vendor/react-dom.js"></script>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap">
+<style>
+body{margin:0;background:#FBF7F0}
+html{scroll-behavior:smooth}
+[id]{scroll-margin-top:96px}
+a{color:#8A4B2A}a:hover{color:#5E3119}
+.nf-nav a{color:#2E241C;text-decoration:none}
+.nf-nav a:hover{color:#8A4B2A}
+.nf-btn{transition:filter .15s ease, background-color .15s ease}
+.nf-btn:hover{filter:brightness(0.9)}
+.nf-ghost:hover{background-color:#FFFFFF}
+.nf-card{transition:transform .2s ease, box-shadow .2s ease}
+.nf-card:hover{transform:translateY(-4px);box-shadow:0 16px 36px rgba(58,42,31,.12)}
+.nf-social:hover{background-color:#E4D4BC}
+input:focus,select:focus,textarea:focus{outline:2px solid #8A4B2A;outline-offset:1px}
+a:focus-visible,button:focus-visible{outline:2px solid #8A4B2A;outline-offset:3px}
+@keyframes nf-spin{to{transform:rotate(360deg)}}
+@keyframes nf-spin-rev{to{transform:rotate(-360deg)}}
+@keyframes nf-breathe{0%,100%{opacity:.09}50%{opacity:.16}}
+@keyframes nf-drift{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+.nf-mandala{animation:nf-spin 160s linear infinite}
+.nf-mandala-rev{animation:nf-spin-rev 200s linear infinite}
+.nf-breathe{animation:nf-breathe 14s ease-in-out infinite}
+.nf-drift{animation:nf-drift 18s ease-in-out infinite}
+@media (prefers-reduced-motion: reduce){.nf-mandala,.nf-mandala-rev,.nf-breathe,.nf-drift{animation:none}}
+</style>
+</helmet>
+<div style="width: 100%; min-height: 100vh; background: #FBF7F0; color: #2E241C; font-family: 'Inter', system-ui, sans-serif; font-size: 16px; line-height: 1.6">
+
+<!-- HEADER -->
+<header style="position: sticky; top: 0; z-index: 20; border-bottom: 1px solid #E6DACA; backdrop-filter: blur(6px); background-color: #ffffff">
+<div style="max-width: 1200px; margin: 0 auto; padding: 14px clamp(16px, 4vw, 40px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 32px">
+<a href="#home" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: #2E241C" aria-label="Natesa Fashions — home">
+<svg width="42" height="42" viewBox="0 0 40 40" aria-hidden="true">
+<path d="M3 11h4M3 15h4M3 19h4M3 23h4M3 27h4M3 31h4M33 11h4M33 15h4M33 19h4M33 23h4M33 27h4M33 31h4" stroke="#C99A3E" stroke-width="1.6" stroke-linecap="round"></path>
+<rect x="7" y="7" width="26" height="28" rx="3" fill="{{accent}}"></rect>
+<rect x="10.5" y="10.5" width="19" height="21" rx="1.5" fill="none" stroke="#E9C98F" stroke-width="1.4"></rect>
+<path d="M20 15.5L24.5 21L20 26.5L15.5 21Z" fill="#E9C98F"></path>
+<circle cx="20" cy="21" r="1.6" fill="{{accent}}"></circle>
+</svg>
+<span style="display: flex; flex-direction: column; line-height: 1"><span style="font-family: Inter, system-ui, sans-serif; font-size: 22px; font-weight: 700; letter-spacing: -0.01em">NATESA FASHIONS</span></span>
+</a>
+<a href="{{waHref}}" target="_blank" rel="noopener" class="nf-btn" style="display: inline-flex; align-items: center; gap: 10px; min-height: 46px; padding: 0 22px 0 16px; border-radius: 999px; background: #1F6B45; color: #FFFFFF; font-size: 15px; font-weight: 600; text-decoration: none">
+<svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5a9.5 9.5 0 0 0-8.2 14.3L2.5 21.5l4.8-1.3A9.5 9.5 0 1 0 12 2.5z" fill="#FFFFFF"></path><path d="M8.9 7.4c-.3 0-.7.1-1 .5-.3.4-.9 1-.9 2.3s1 2.7 1.1 2.9c.1.2 1.9 3 4.7 4.1 2.3.9 2.8.7 3.3.7.5-.1 1.6-.7 1.8-1.3.2-.6.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3l-2-1c-.3-.1-.5-.1-.7.1l-.9 1.1c-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.8-.7-1.4-1.6-1.6-1.9-.2-.3 0-.4.1-.6l.5-.6c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5z" fill="#1F6B45"></path></svg>
+Order on WhatsApp</a>
+</div>
+</header>
+
+<!-- HERO -->
+<section id="home" style="position: relative; overflow: hidden; background: #EFE4D3">
+<div aria-hidden="true" style="position: absolute; inset: 0; pointer-events: none; z-index: 0">
+
+
+<svg class="nf-drift" viewBox="0 0 120 40" fill="none" stroke="#8A4B2A" stroke-width=".8" style="position: absolute; left: 44%; top: 18px; width: 140px; height: auto; opacity: .1">
+<circle cx="10" cy="20" r="2"></circle><circle cx="30" cy="20" r="2"></circle><circle cx="50" cy="20" r="2"></circle><circle cx="70" cy="20" r="2"></circle><circle cx="90" cy="20" r="2"></circle><circle cx="110" cy="20" r="2"></circle>
+<path d="M10 20C20 4 20 4 30 20C40 36 40 36 50 20C60 4 60 4 70 20C80 36 80 36 90 20C100 4 100 4 110 20"></path>
+</svg>
+</div>
+<div style="position: relative; z-index: 1; max-width: 1200px; margin: 0 auto; padding: clamp(28px, 4vw, 48px) clamp(16px, 4vw, 40px) clamp(20px, 2.5vw, 28px); display: flex; flex-wrap: wrap; align-items: center; gap: 24px 48px">
+<div style="position: relative; z-index: 1; flex: 1 1 440px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+<p style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #6B5B4D">Natesa Fashions · Kanchipuram</p>
+<h1 style="margin: 0; font-family: 'Inter', system-ui, sans-serif; font-weight: 600; font-size: clamp(34px, 3.8vw, 52px); line-height: 1.08; letter-spacing: -0.02em; color: #2E241C">Find Your Peace, One Moment at a Time</h1>
+<p style="margin: 0; max-width: 520px; font-size: 17px; color: #4F4136">Thoughtfully designed mats for your daily prayer and meditation.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px; padding-top: 4px">
+<a href="#mats" class="nf-btn" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 30px; border-radius: 999px; background: {{accent}}; color: #FFFFFF; font-weight: 600; text-decoration: none">Explore Our Mats</a>
+<a href="#contact" class="nf-btn nf-ghost" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 30px; border-radius: 999px; border: 1.5px solid #2E241C; color: #2E241C; font-weight: 600; text-decoration: none">Contact Us</a>
+</div>
+</div>
+<div style="position: relative; z-index: 1; flex: 1 1 380px; min-width: 0">
+<div style="position: relative; aspect-ratio: 16 / 10; max-height: 380px; border-radius: 24px; background: #E2D0B4; overflow: hidden; box-shadow: 0 18px 40px rgba(58,42,31,.18)">
+<img src="./assets/4603a322c504d7f7dbd4e7cfffc01a9d.jpg" alt="Ganesha idol seated on a green velvet mat with a golden flower border" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 45%">
+</div>
+</div>
+<div class="nf-breathe" aria-hidden="true" style="position: absolute; left: 826px; top: 24px; width: 628px; height: 628px; opacity: .12; z-index: 0; pointer-events: none">
+<svg class="nf-mandala" viewBox="0 0 200 200" fill="none" stroke="#8A4B2A" stroke-width=".6" style="width: 788px; height: 788px; display: block">
+<circle cx="100" cy="100" r="96"></circle><circle cx="100" cy="100" r="84"></circle><circle cx="100" cy="100" r="62"></circle><circle cx="100" cy="100" r="34"></circle><circle cx="100" cy="100" r="14"></circle>
+<g><path d="M100 18C113 36 113 56 100 66C87 56 87 36 100 18Z"></path><path d="M100 18C113 36 113 56 100 66C87 56 87 36 100 18Z" transform="rotate(30 100 100)"></path><path d="M100 18C113 36 113 56 100 66C87 56 87 36 100 18Z" transform="rotate(60 100 100)"></path><path d="M100 18C113 36 113 56 100 66C87 56 87 36 100 18Z" transform="rotate(90 100 100)"></path><path d="M100 18C113 36 113 56 100 66C87 56 87 36 100 18Z" transform="rotate(120 100 100)"></path><path d="M100 18C113 36 113 56 100 66C87 56 87 36 100 18Z" transform="rotate(150 100 100)"></path><path d="M100 18C113 36 113 56 100 66C87 56 87 36 100 18Z" transform="rotate(180 100 100)"></path><path d="M100 18C113 36 113 56 100 66C87 56 87 36 100 18Z" transform="rotate(210 100 100)"></path><path d="M100 18C113 36 113 56 100 66C87 56 87 36 100 18Z" transform="rotate(240 100 100)"></path><path d="M100 18C113 36 113 56 100 66C87 56 87 36 100 18Z" transform="rotate(270 100 100)"></path><path d="M100 18C113 36 113 56 100 66C87 56 87 36 100 18Z" transform="rotate(300 100 100)"></path><path d="M100 18C113 36 113 56 100 66C87 56 87 36 100 18Z" transform="rotate(330 100 100)"></path></g>
+<g><path d="M100 66L108 80L100 94L92 80Z"></path><path d="M100 66L108 80L100 94L92 80Z" transform="rotate(45 100 100)"></path><path d="M100 66L108 80L100 94L92 80Z" transform="rotate(90 100 100)"></path><path d="M100 66L108 80L100 94L92 80Z" transform="rotate(135 100 100)"></path><path d="M100 66L108 80L100 94L92 80Z" transform="rotate(180 100 100)"></path><path d="M100 66L108 80L100 94L92 80Z" transform="rotate(225 100 100)"></path><path d="M100 66L108 80L100 94L92 80Z" transform="rotate(270 100 100)"></path><path d="M100 66L108 80L100 94L92 80Z" transform="rotate(315 100 100)"></path></g>
+<g fill="#8A4B2A" stroke="none"><circle cx="100" cy="10" r="1.6"></circle><circle cx="100" cy="10" r="1.6" transform="rotate(30 100 100)"></circle><circle cx="100" cy="10" r="1.6" transform="rotate(60 100 100)"></circle><circle cx="100" cy="10" r="1.6" transform="rotate(90 100 100)"></circle><circle cx="100" cy="10" r="1.6" transform="rotate(120 100 100)"></circle><circle cx="100" cy="10" r="1.6" transform="rotate(150 100 100)"></circle><circle cx="100" cy="10" r="1.6" transform="rotate(180 100 100)"></circle><circle cx="100" cy="10" r="1.6" transform="rotate(210 100 100)"></circle><circle cx="100" cy="10" r="1.6" transform="rotate(240 100 100)"></circle><circle cx="100" cy="10" r="1.6" transform="rotate(270 100 100)"></circle><circle cx="100" cy="10" r="1.6" transform="rotate(300 100 100)"></circle><circle cx="100" cy="10" r="1.6" transform="rotate(330 100 100)"></circle></g>
+</svg>
+</div></div>
+
+<!-- ABOUT (part of the banner) -->
+<div style="position: relative; z-index: 1; max-width: 1200px; margin: 0 auto; padding: 0 clamp(16px, 4vw, 40px) clamp(28px, 4vw, 40px)">
+<div id="about" style="background: #FBF7F0; border: 1px solid #E2D0B4; border-radius: 20px; padding: 18px clamp(18px, 3vw, 28px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 32px">
+<div style="flex: 1 1 300px; min-width: 0; display: flex; flex-direction: column; gap: 2px">
+<h2 style="margin: 0; font-family: 'Inter', system-ui, sans-serif; font-weight: 600; font-size: 20px; line-height: 1.3; letter-spacing: -0.01em">Comfort for Your Spiritual Journey</h2>
+<p style="margin: 0; font-size: 15px; color: #4F4136">Soft, steady and made for everyday prayer or meditation.</p>
+</div>
+<ul style="flex: 2 1 480px; min-width: 0; list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 12px 28px">
+<li style="display: flex; align-items: center; gap: 10px">
+<span style="flex: none; width: 40px; height: 40px; border-radius: 12px; background: #F1E7D7; display: flex; align-items: center; justify-content: center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="{{accent}}" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 14c3-2 6-2 9 0s6 2 9 0"></path><path d="M3 18c3-2 6-2 9 0s6 2 9 0"></path><path d="M12 4c-2 2-2 5 0 7 2-2 2-5 0-7z"></path></svg></span>
+<span style="font-weight: 600; font-size: 15px; white-space: nowrap">Comfortable Design</span>
+</li>
+<li style="display: flex; align-items: center; gap: 10px">
+<span style="flex: none; width: 40px; height: 40px; border-radius: 12px; background: #F1E7D7; display: flex; align-items: center; justify-content: center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="{{accent}}" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="12" width="6" height="8" rx="1"></rect><rect x="10" y="8" width="5" height="12" rx="1"></rect><rect x="16" y="4" width="5" height="16" rx="1"></rect></svg></span>
+<span style="font-weight: 600; font-size: 15px; white-space: nowrap">Multiple Size Options</span>
+</li>
+<li style="display: flex; align-items: center; gap: 10px">
+<span style="flex: none; width: 40px; height: 40px; border-radius: 12px; background: #F1E7D7; display: flex; align-items: center; justify-content: center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="{{accent}}" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 16L16 3l5 5L8 21z"></path><path d="M7 12l2 2M10 9l2 2M13 6l2 2"></path></svg></span>
+<span style="font-weight: 600; font-size: 15px; white-space: nowrap">Custom Sizes Available</span>
+</li>
+</ul>
+</div>
+</div>
+</section>
+
+<!-- PRODUCTS -->
+<section id="mats" style="background-color: #ffffff">
+<div style="max-width: 1200px; margin: 0 auto; padding: clamp(48px, 6vw, 80px) clamp(16px, 4vw, 40px); display: flex; flex-direction: column; gap: 32px">
+<div style="display: flex; flex-direction: column; gap: 10px; align-items: center; text-align: center">
+<p style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #6B5B4D">Our collection</p>
+<h2 style="margin: 0; font-family: 'Inter', system-ui, sans-serif; font-weight: 600; font-size: clamp(34px, 3.8vw, 52px); line-height: 1.1">Choose Your Perfect Mat</h2>
+</div>
+<div style="display: flex; flex-direction: column; gap: 24px">
+<div style="min-width: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 24px">
+<sc-for list="{{colourCards}}" as="p" hint-placeholder-count="4">
+<article class="nf-card" style="display: flex; flex-direction: column; background: #FFFFFF; border: 1px solid #E6DACA; border-radius: 20px; overflow: hidden">
+<div style="position: relative; aspect-ratio: 4 / 3; background: #F1E7D7; overflow: hidden">
+<sc-for list="{{p.slides}}" as="sl" hint-placeholder-count="1">
+<img src="{{sl.src}}" alt="{{sl.alt}}" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: {{sl.opacity}}; transition: opacity 1.2s ease-in-out">
+</sc-for>
+<sc-if value="{{p.multi}}" hint-placeholder-val="{{ false }}">
+<div style="position: absolute; left: 50%; bottom: 12px; transform: translateX(-50%); display: flex; align-items: center; gap: 2px; padding: 2px 6px; border-radius: 999px; background: rgba(46,36,28,.35)">
+<sc-for list="{{p.slides}}" as="sl" hint-placeholder-count="3">
+<button type="button" aria-label="{{sl.label}}" aria-current="{{sl.current}}" onClick="{{sl.go}}" style="height: 20px; padding: 0 3px; border: none; background: transparent; cursor: pointer; display: flex; align-items: center"><span style="display: block; width: {{sl.dotW}}; height: 7px; border-radius: 999px; background: {{sl.dot}}; transition: width .4s ease, background-color .4s ease"></span></button>
+</sc-for>
+</div>
+</sc-if>
+</div>
+<div style="flex: 1; display: flex; flex-direction: column; gap: 16px; padding: 22px 24px 24px">
+<div style="display: flex; align-items: baseline; justify-content: space-between; gap: 12px">
+<h3 style="margin: 0; font-family: 'Inter', system-ui, sans-serif; font-weight: 600; font-size: 24px; line-height: 1.2; letter-spacing: -0.01em">{{p.name}}</h3>
+<span style="font-size: {{p.priceSize}}; font-weight: 700; color: {{p.priceColor}}; text-align: right">{{p.price}}</span>
+</div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 10px 12px">
+<span id="{{p.selectId}}" style="flex: none; font-size: 14px; font-weight: 600; color: #6B5B4D">Size</span>
+<div role="group" aria-labelledby="{{p.selectId}}" style="flex: 1 1 auto; display: flex; flex-wrap: wrap; gap: 8px">
+<sc-for list="{{p.sizeTags}}" as="t" hint-placeholder-count="3">
+<button type="button" aria-pressed="{{t.pressed}}" aria-label="{{t.aria}}" onClick="{{t.pick}}" style="min-height: 44px; padding: 0 14px; border-radius: 999px; border: 1.5px solid {{t.border}}; background: {{t.bg}}; color: {{t.color}}; font: inherit; font-size: 14px; font-weight: 600; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 6px; line-height: 1; white-space: nowrap; transition: background-color .2s ease, color .2s ease, border-color .2s ease"><span style="display: block; line-height: 1">{{t.label}}</span><span style="display: block; line-height: 1; font-size: 12px; font-weight: 500; opacity: .8">{{t.sub}}</span></button>
+</sc-for>
+</div>
+<a href="{{p.orderHref}}" target="_blank" rel="noopener" onClick="{{p.order}}" aria-label="{{p.ctaLabel}}" class="nf-btn" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; min-height: 48px; padding: 0 24px; border-radius: 999px; background: {{accent}}; color: #FFFFFF; font-weight: 600; text-decoration: none; white-space: nowrap">Order Now</a>
+</div>
+</div>
+</article>
+</sc-for>
+</div>
+
+<aside aria-label="Custom size mats" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px 40px; padding: clamp(24px, 3vw, 36px) clamp(24px, 3.5vw, 44px); border-radius: 20px; background: #2E241C; color: #FBF7F0">
+<div style="flex: 2 1 340px; min-width: 0; display: flex; flex-direction: column; gap: 10px">
+<p style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #D9CBB6">Made to order</p>
+<h3 style="margin: 0; font-family: 'Inter', system-ui, sans-serif; font-weight: 600; font-size: clamp(28px, 2.6vw, 36px); line-height: 1.15; letter-spacing: -0.01em; color: #FBF7F0">Need a Custom Size?</h3>
+<p style="margin: 0; font-size: 16px; color: #E6DACA">Get a mat tailored to your preferred dimensions, in the colour you like.</p>
+</div>
+<svg viewBox="0 0 200 160" aria-hidden="true" style="flex: none; width: 150px; height: auto">
+<rect x="24" y="24" width="152" height="112" rx="6" fill="none" stroke="#D9CBB6" stroke-width="2" stroke-dasharray="8 6"></rect>
+<path d="M24 10h152M24 4v12M176 4v12M190 24v112M184 24h12M184 136h12" stroke="#B8893B" stroke-width="2"></path>
+<text x="100" y="86" text-anchor="middle" font-family="Inter, sans-serif" font-size="16" font-weight="600" fill="#D9CBB6">Your size</text>
+</svg>
+<div style="flex: 1 1 260px; min-width: 0; display: flex; flex-direction: column; gap: 14px">
+<div style="display: flex; justify-content: space-between; align-items: baseline; padding-bottom: 12px; border-bottom: 1px solid #4A3D32">
+<span style="font-size: 13px; color: #D9CBB6">Price</span>
+<span style="font-size: 16px; font-weight: 600; color: #FBF7F0">Contact for price</span>
+</div>
+<a href="{{customHref}}" target="_blank" rel="noopener" onClick="{{orderCustom}}" class="nf-btn" style="display: flex; align-items: center; justify-content: center; min-height: 52px; border-radius: 999px; background: #FBF7F0; color: #2E241C; font-weight: 600; text-decoration: none">Request Custom Size</a>
+</div>
+</aside>
+</div>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" style="background: #FBF7F0">
+<div style="max-width: 1200px; margin: 0 auto; padding: clamp(64px, 8vw, 112px) clamp(16px, 4vw, 40px); display: flex; flex-wrap: wrap; align-items: stretch; gap: 24px">
+
+<aside style="flex: 1 1 320px; min-width: 0; background: #F1E7D7; border-radius: 20px; padding: clamp(24px, 3.5vw, 36px); display: flex; flex-direction: column; gap: 22px">
+<h2 style="margin: 0; font-family: 'Inter', system-ui, sans-serif; font-weight: 600; font-size: 28px; line-height: 1.2; letter-spacing: -0.01em">Contact Us</h2>
+<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); gap: 16px">
+<div style="display: flex; align-items: flex-start; gap: 14px; padding: 18px 20px; border-radius: 14px; background: #FBF7F0; min-width: 0">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="{{accent}}" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 2px"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c1-4 4-6 8-6s7 2 8 6"></path></svg>
+<div><dt style="font-size: 13px; color: #6B5B4D">Name</dt><dd style="margin: 0; font-weight: 600; font-size: 15px">Natesa Fashions</dd></div>
+</div>
+<div style="display: flex; align-items: flex-start; gap: 14px; padding: 18px 20px; border-radius: 14px; background: #FBF7F0; min-width: 0">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="{{accent}}" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 2px"><path d="M12 21s-7-6-7-12a7 7 0 0 1 14 0c0 6-7 12-7 12z"></path><circle cx="12" cy="9" r="2.5"></circle></svg>
+<div><dt style="font-size: 13px; color: #6B5B4D">Address</dt><dd style="margin: 0; font-weight: 600; font-size: 15px">Kanchipuram, Tamil Nadu</dd></div>
+</div>
+<div style="display: flex; align-items: flex-start; gap: 14px; padding: 18px 20px; border-radius: 14px; background: #FBF7F0; min-width: 0">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="{{accent}}" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 2px"><path d="M5 3h4l2 5-3 2a11 11 0 0 0 6 6l2-3 5 2v4a2 2 0 0 1-2 2A17 17 0 0 1 3 5a2 2 0 0 1 2-2z"></path></svg>
+<div><dt style="font-size: 13px; color: #6B5B4D">Phone</dt><dd style="margin: 0; font-weight: 600; font-size: 15px"><a href="{{phoneHref}}">{{phoneLabel}}</a></dd></div>
+</div>
+<div style="display: flex; align-items: flex-start; gap: 14px; padding: 18px 20px; border-radius: 14px; background: #FBF7F0; min-width: 0">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="{{accent}}" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 2px"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="M3 7l9 6 9-6"></path></svg>
+<div><dt style="font-size: 13px; color: #6B5B4D">Email</dt><dd style="margin: 0; font-weight: 600; overflow-wrap: anywhere; font-size: 15px"><a href="{{emailHref}}">{{emailLabel}}</a></dd></div>
+</div>
+</dl>
+<a href="{{waHref}}" target="_blank" rel="noopener" class="nf-btn" style="align-self: flex-start; display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 52px; padding: 0 28px; border-radius: 999px; background: #1F6B45; color: #FFFFFF; font-weight: 600; text-decoration: none">
+<svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5a9.5 9.5 0 0 0-8.2 14.3L2.5 21.5l4.8-1.3A9.5 9.5 0 1 0 12 2.5z" fill="#FFFFFF"></path><path d="M8.9 7.4c-.3 0-.7.1-1 .5-.3.4-.9 1-.9 2.3s1 2.7 1.1 2.9c.1.2 1.9 3 4.7 4.1 2.3.9 2.8.7 3.3.7.5-.1 1.6-.7 1.8-1.3.2-.6.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3l-2-1c-.3-.1-.5-.1-.7.1l-.9 1.1c-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.8-.7-1.4-1.6-1.6-1.9-.2-.3 0-.4.1-.6l.5-.6c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5z" fill="#1F6B45"></path></svg>
+Chat on WhatsApp</a>
+</aside>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer style="background: #2E241C; color: #F3EADB">
+<div style="max-width: 1200px; margin: 0 auto; padding: 56px clamp(16px, 4vw, 40px) 28px; display: flex; flex-direction: column; gap: 36px">
+<div style="display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: space-between; gap: 32px">
+<div style="flex: 1 1 280px; display: flex; flex-direction: column; gap: 10px; max-width: 380px">
+<span style="display: flex; align-items: center; gap: 10px">
+<svg width="42" height="42" viewBox="0 0 40 40" aria-hidden="true">
+<path d="M3 11h4M3 15h4M3 19h4M3 23h4M3 27h4M3 31h4M33 11h4M33 15h4M33 19h4M33 23h4M33 27h4M33 31h4" stroke="#C99A3E" stroke-width="1.6" stroke-linecap="round"></path>
+<rect x="7" y="7" width="26" height="28" rx="3" fill="#8A4B2A"></rect>
+<rect x="10.5" y="10.5" width="19" height="21" rx="1.5" fill="none" stroke="#E9C98F" stroke-width="1.4"></rect>
+<path d="M20 15.5L24.5 21L20 26.5L15.5 21Z" fill="#E9C98F"></path>
+<circle cx="20" cy="21" r="1.6" fill="#8A4B2A"></circle>
+</svg>
+<span style="display: flex; flex-direction: column; line-height: 1">
+<span style="font-size: 22px; font-weight: 700; letter-spacing: -0.01em; color: #FBF7F0">Natesa</span>
+<span style="margin-top: 4px; font-size: 10.5px; font-weight: 600; letter-spacing: 0.32em; text-transform: uppercase; color: #D9CBB6">Fashions</span>
+</span>
+</span>
+
+</div>
+
+<div style="display: flex; gap: 12px">
+<a href="{{instagramHref}}" target="_blank" rel="noopener" aria-label="Natesa Fashions on Instagram" style="width: 48px; height: 48px; border-radius: 999px; border: 1px solid #6B5B4D; display: flex; align-items: center; justify-content: center; color: #FBF7F0">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.3" cy="6.7" r="0.6" fill="currentColor"></circle></svg>
+</a>
+<a href="{{waHref}}" target="_blank" rel="noopener" aria-label="Chat with Natesa Fashions on WhatsApp" style="width: 48px; height: 48px; border-radius: 999px; background: #1F6B45; display: flex; align-items: center; justify-content: center">
+<svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5a9.5 9.5 0 0 0-8.2 14.3L2.5 21.5l4.8-1.3A9.5 9.5 0 1 0 12 2.5z" fill="#FFFFFF"></path><path d="M8.9 7.4c-.3 0-.7.1-1 .5-.3.4-.9 1-.9 2.3s1 2.7 1.1 2.9c.1.2 1.9 3 4.7 4.1 2.3.9 2.8.7 3.3.7.5-.1 1.6-.7 1.8-1.3.2-.6.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3l-2-1c-.3-.1-.5-.1-.7.1l-.9 1.1c-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.8-.7-1.4-1.6-1.6-1.9-.2-.3 0-.4.1-.6l.5-.6c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5z" fill="#1F6B45"></path></svg>
+</a>
+</div>
+</div><div style="padding-top: 22px; border-top: 1px solid #4A3D32; font-size: 14px; color: #CDBFA9">© 2026 Natesa Fashions. All rights reserved.</div>
+
+</div>
+</footer>
+
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#8A4B2A","options":["#8A4B2A","#6B4F2A","#5C3A4A","#3F5A45"],"section":"Look"},"whatsappNumber":{"editor":"text","default":"","section":"Contact links"},"contactPhone":{"editor":"text","default":"","section":"Contact links"},"contactEmail":{"editor":"text","default":"","section":"Contact links"},"instagramUrl":{"editor":"text","default":"","section":"Contact links"},"$preview":{"width":1440,"height":3700}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { name: '', email: '', phone: '', model: '', size: '', dims: '', submitted: false, ready: false, tick: 0, cardSizes: {}, slideOffset: {} };
+  }
+
+  componentDidMount() {
+    this.timer = setInterval(() => this.setState((st) => ({ tick: st.tick + 1 })), 3500);
+  }
+
+  componentWillUnmount() {
+    if (this.timer) clearInterval(this.timer);
+  }
+
+  validate(s) {
+    const e = {};
+    if (s.name.trim().length < 2) e.name = 'Please enter your full name.';
+    const em = s.email.trim();
+    if (!em) e.email = 'Please enter your email address.';
+    else if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(em)) e.email = 'Enter a valid email, like name@example.com.';
+    const ph = s.phone.replace(/[\s()-]/g, '');
+    if (!ph) e.phone = 'Please enter your mobile number.';
+    else if (!/^(\+?91)?[6-9]\d{9}$/.test(ph)) e.phone = 'Enter a valid 10-digit mobile number.';
+    if (!s.model) e.model = 'Please choose a mat colour.';
+    if (s.model && s.model !== 'Custom Size' && !s.size) e.size = 'Please choose a size.';
+    if (s.model === 'Custom Size' && s.dims.trim().length < 2) e.dims = 'Please describe the size you need.';
+    return e;
+  }
+
+  update(patch) {
+    this.setState(Object.assign({ ready: false }, patch));
+  }
+
+  renderVals() {
+    const s = this.state;
+    const accent = this.props.accent ?? '#8A4B2A';
+    let waDigits = String(this.props.whatsappNumber || '9445376665').replace(/\D/g, '');
+    if (waDigits.length === 10) waDigits = '91' + waDigits;
+    const phoneRaw = String(this.props.contactPhone ?? '').trim();
+    const email = String(this.props.contactEmail ?? '').trim();
+    const insta = String(this.props.instagramUrl ?? '').trim();
+
+    const errors = s.submitted ? this.validate(s) : {};
+    const hasErrors = Object.keys(errors).length > 0;
+    const ok = '#D9CBB6';
+    const bad = '#A3261E';
+
+    const mk = (key, id, label, type, mode, auto, placeholder, span) => ({
+      key: key, id: id, label: label, type: type, mode: mode, auto: auto, placeholder: placeholder, span: span,
+      value: s[key],
+      onChange: (ev) => this.update({ [key]: ev.target.value }),
+      hasError: !!errors[key],
+      error: errors[key] || '',
+      invalid: errors[key] ? 'true' : 'false',
+      border: errors[key] ? bad : ok,
+      errId: id + '-err'
+    });
+    const fields = [
+      mk('name', 'f-name', 'Full Name', 'text', 'text', 'name', 'Your full name', '1 / -1'),
+      mk('email', 'f-email', 'Email Address', 'email', 'email', 'email', 'name@example.com', 'auto'),
+      mk('phone', 'f-phone', 'Mobile Number', 'tel', 'tel', 'tel', '10-digit mobile number', 'auto')
+    ];
+
+    // Sizes and prices
+    const SIZES = {
+      Small: { inch: '5 inch', price: '₹150' },
+      Medium: { inch: '11 inch', price: '₹250' },
+      Large: { inch: '15 inch', price: '₹450' }
+    };
+    // Product photos — add more urls to any list to grow its slideshow
+    const base = [
+      { key: 'Red', name: 'Kumkum Red', images: [
+        './assets/adcde579f5488645c3fe80a4b2432b30.jpg',
+        './assets/1a94888ed861c1e7ae198ebc5c1c5329.jpg',
+        './assets/94c6edc9c06f740c057260d71dcfc73c.jpg',
+        './assets/c20e67993c5c79fa494f8922f33df8df.jpg',
+        './assets/18959ce726cacf9ca3190c8b6fb53811.jpg',
+        './assets/0cbe906841d2db4f598b6d2ad9ee24d4.jpg',
+        './assets/57ef75fb9a6eb9fae42e0bccfda04cbb.jpg',
+        './assets/3bf5d8ba1d337e8f710aa71dde30f3b8.jpg',
+        './assets/87208e8cbf835c72c522a89cafa9b754.jpg',
+        './assets/9a17142f49dc515f54feb750bdb08db0.jpg',
+        './assets/04f2926e3b6ecbfa38296715e16f9849.jpg',
+        './assets/5f0de0aba40205524d22e46b6ad21b01.jpg',
+        './assets/81de19ff51d75c1ea98eee17170cad69.jpg'
+      ] },
+      { key: 'Green', name: 'Tulsi Green', images: [
+        './assets/515f10668da6778e97e55f656c972718.jpg',
+        './assets/2e75be9fe1fbe92bc781999c606b86be.jpg',
+        './assets/fe396671a83ff7894011b00aeba8ba51.jpg',
+        './assets/4603a322c504d7f7dbd4e7cfffc01a9d.jpg'
+      ] },
+      { key: 'Purple', name: 'Dhyana Purple', images: [
+        './assets/735a0b5a2bb348ffad2a604c298d250b.jpg',
+        './assets/9b8e13e4cc62805bd33abfffae0b9e0f.jpg',
+        './assets/84d712b94a9192fbd1435770ff6cdccb.jpg',
+        './assets/76baaeaa2776d63299806643fea0c1e0.jpg',
+        './assets/fd294df7789c93729d9c8c4eb6a05977.jpg',
+        './assets/7b13f9472d6661c66e4a7f05aa2119bc.jpg',
+        './assets/8017f144430c625e525611574147e82f.jpg',
+        './assets/b545779f35a6b734175d99e766d00010.jpg',
+        './assets/cbb8a803d71dfedec4280b5252641d71.jpg',
+        './assets/7e8732f1b932bc0825039afe4f47bdb7.jpg'
+      ] },
+      { key: 'Rose', name: 'Kamala Rose', images: ['./assets/b656d0fef609a0476d5c65b7ef6185b6.jpg'] },
+      { key: 'Custom Size', name: 'Custom', images: [], custom: true }
+    ];
+    const products = base.map((p) => {
+      const n = p.images.length;
+      const off = s.slideOffset[p.key] || 0;
+      const active = n ? (((s.tick + off) % n) + n) % n : 0;
+      const chosen = s.cardSizes[p.key] || 'Small';
+      const info = SIZES[chosen];
+      const slides = p.images.map((src, i) => ({
+        src: src,
+        alt: p.name + ' spiritual mat, photo ' + (i + 1) + ' of ' + n,
+        opacity: i === active ? 1 : 0,
+        dot: i === active ? '#FFFFFF' : 'rgba(255,255,255,.55)',
+        dotW: i === active ? '18px' : '7px',
+        current: i === active ? 'true' : 'false',
+        label: 'Show ' + p.name + ' photo ' + (i + 1),
+        go: () => this.setState((st) => ({ slideOffset: Object.assign({}, st.slideOffset, { [p.key]: i - st.tick }) }))
+      }));
+      const custom = !!p.custom;
+      return {
+        name: p.name,
+        slides: slides,
+        multi: n > 1,
+        counter: n ? (active + 1) + ' / ' + n : '',
+        prevLabel: 'Previous ' + p.name + ' photo',
+        nextLabel: 'Next ' + p.name + ' photo',
+        prev: () => this.setState((st) => ({ slideOffset: Object.assign({}, st.slideOffset, { [p.key]: (st.slideOffset[p.key] || 0) - 1 }) })),
+        next: () => this.setState((st) => ({ slideOffset: Object.assign({}, st.slideOffset, { [p.key]: (st.slideOffset[p.key] || 0) + 1 }) })),
+        custom: custom,
+        isStandard: !custom,
+        selectId: 'size-' + p.key.toLowerCase().replace(/\s+/g, '-'),
+        size: chosen,
+        onSize: (ev) => { const v = ev.target.value; this.setState((st) => ({ cardSizes: Object.assign({}, st.cardSizes, { [p.key]: v }) })); },
+        sizeTags: ['Small', 'Medium', 'Large'].map((k) => {
+          const on = k === chosen;
+          return {
+            label: k,
+            sub: SIZES[k].inch.replace(' inch', '″'),
+            aria: k + ' — ' + SIZES[k].inch + ', ' + SIZES[k].price,
+            pressed: on ? 'true' : 'false',
+            bg: on ? '#F6E9DC' : '#FFFFFF',
+            color: on ? '#6E3A20' : '#4F4136',
+            border: on ? '#C9A27E' : '#E6DACA',
+            pick: () => this.setState((st) => ({ cardSizes: Object.assign({}, st.cardSizes, { [p.key]: k }) }))
+          };
+        }),
+        price: custom ? 'Contact for price' : (info ? info.price : 'Select a size'),
+        priceSize: custom || !info ? '14px' : '24px',
+        priceColor: '#2E241C',
+        cta: custom ? 'Request Custom Size' : 'Order Now',
+        ctaLabel: (custom ? 'Request Custom Size' : 'Order Now') + ' — ' + p.name + ' mat',
+        ctaBg: custom ? '#FFFFFF' : accent,
+        ctaColor: custom ? accent : '#FFFFFF',
+        order: () => this.update({ model: p.key, size: custom ? '' : chosen }),
+        orderHref: waDigits && info ? 'https://wa.me/' + waDigits + '?text=' + encodeURIComponent(
+          'Hello Natesa Fashions, I would like to order this mat:\n' +
+          'Product: ' + p.name + '\n' +
+          'Size: ' + chosen + ' (' + info.inch + ')\n' +
+          'Price: ' + info.price
+        ) : '#contact'
+      };
+    });
+
+    const sizeInfo = SIZES[s.size];
+    const lines = [
+      'Hello Natesa Fashions, I would like to enquire about a mat.',
+      'Colour: ' + s.model,
+      s.model !== 'Custom Size' && sizeInfo ? 'Size: ' + s.size + ' (' + sizeInfo.inch + ') — ' + sizeInfo.price : '',
+      s.model === 'Custom Size' ? 'Preferred dimensions: ' + s.dims.trim() : '',
+      'Name: ' + s.name.trim(),
+      'Email: ' + s.email.trim(),
+      'Mobile: ' + s.phone.trim()
+    ].filter(Boolean);
+    const text = lines.join('\n');
+    const subject = 'Mat enquiry — ' + (s.model || 'General');
+
+    return {
+      accent: accent,
+      colourCards: products.filter((p) => !p.custom),
+      orderCustom: () => this.update({ model: 'Custom Size', size: '' }),
+      customHref: waDigits ? 'https://wa.me/' + waDigits + '?text=' + encodeURIComponent(
+        'Hello Natesa Fashions, I would like to order a custom size mat.\n' +
+        'Colour: \n' +
+        'Size (length x width): '
+      ) : '#contact',
+      fields: fields,
+      errors: errors,
+      model: s.model,
+      dims: s.dims,
+      isCustom: s.model === 'Custom Size',
+      needsSize: !!s.model && s.model !== 'Custom Size',
+      size: s.size,
+      sizeHasError: !!errors.size,
+      sizeInvalid: errors.size ? 'true' : 'false',
+      sizeBorder: errors.size ? bad : ok,
+      onSizeForm: (ev) => this.update({ size: ev.target.value }),
+      modelHasError: !!errors.model,
+      modelInvalid: errors.model ? 'true' : 'false',
+      modelBorder: errors.model ? bad : ok,
+      dimsHasError: !!errors.dims,
+      dimsInvalid: errors.dims ? 'true' : 'false',
+      dimsBorder: errors.dims ? bad : ok,
+      onModel: (ev) => this.update({ model: ev.target.value }),
+      onDims: (ev) => this.update({ dims: ev.target.value }),
+      onSubmit: (ev) => {
+        if (ev && ev.preventDefault) ev.preventDefault();
+        const e = this.validate(this.state);
+        this.setState({ submitted: true, ready: Object.keys(e).length === 0 });
+      },
+      showError: s.submitted && hasErrors,
+      showReady: s.ready && !hasErrors,
+      waSendHref: waDigits ? 'https://wa.me/' + waDigits + '?text=' + encodeURIComponent(text) : '#enquiry',
+      linksMissing: !waDigits,
+      waHref: waDigits ? 'https://wa.me/' + waDigits + '?text=' + encodeURIComponent('Hello Natesa Fashions, I would like to order a spiritual mat.') : '#contact',
+      instagramHref: insta || '#contact',
+      phoneHref: phoneRaw ? 'tel:' + phoneRaw.replace(/[^\d+]/g, '') : '#contact',
+      phoneLabel: phoneRaw || '+91 944 537 6665',
+      emailHref: email ? 'mailto:' + email : '#contact',
+      emailLabel: email || '[Your Email Address]'
+    };
+  }
+}
+</script>
+</body>
+</html>
